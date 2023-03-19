@@ -8,14 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController, UIScrollViewDelegate {
+    
     let imageView = UIImageView(image: UIImage(named: "Image"))
     let imageHeight: CGFloat = 270
     let scrollView = UIScrollView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        imageView.contentMode = .scaleAspectFill
+
         imageView.clipsToBounds = true
         imageView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: imageHeight)
         
